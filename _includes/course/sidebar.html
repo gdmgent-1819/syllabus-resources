@@ -1,0 +1,45 @@
+<div id="sidebar" class="ahs-sidebar">
+    <header class="ahs-header">
+        <div id="sidebar-collapse-button" class="ahs-header__courtesy-nav">
+            <i class="fa fa-bars"></i>
+        </div>
+        <h1 class="ahs-header__logo">
+            <a href="{{ '/' | absolute_url }}" title="{% if syllabus %}{{ syllabus.title.long }}{% else %}Syllabus{% endif %}">
+                <span class="ahs-logo">
+                    <span class="ahs-logo__a"></span>
+                    <span class="ahs-logo__s ahs-logo__s--1"></span>
+                    <span class="ahs-logo__s ahs-logo__s--2"></span>
+                </span>
+                <span class="ahs-header__title">
+                {%- if syllabus %}
+                    {{ syllabus.title.short }}
+                {%- else %}
+                    SYLLBS
+                {%- endif %}
+                </span>
+            </a>
+        </h1>
+        <div class="ahs-header__search">
+            <form id="search-frm" action="{{ 'search' | relative_url }}" method="get">
+                <label for="search-query"><i class="fas fa-search fa-flip-horizontal" aria-hidden="true"></i></label>
+                <input type="text" id="search-query" name="search-query" placeholder="Zoek in {% if syllabus %}{{ syllabus.title.long }}{% else %}Syllabus{% endif %}">
+            </form>
+        </div>
+    </header>
+    <div class="ahs-sidebar__body">
+        {% include course/sidebar-nav.html %}
+    </div>
+    <div class="ahs-sidebar__footer">
+        <a class="footer__link" href="{{ 'sitemap' | absolute_url }}" title="Sitemap">
+            <i class="fas fa-list"></i>
+        </a>
+        <a class="footer__link" href="https://teams.microsoft.com" title="Microsoft Teams">
+            <i class="fas fa-comments"></i>
+        </a>
+    {%- if syllabus.resources.chamilo-id %}
+        <a class="footer__link" href="https://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course={{ syllabus.resources.chamilo-id }}" title="Chamilo">
+            <i class="fas fa-desktop"></i>
+        </a>
+    {%- endif %}
+    </div>
+</div>

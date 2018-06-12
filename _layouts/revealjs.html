@@ -1,0 +1,21 @@
+---
+layout: shared/base
+styles:
+  cdn :
+    - https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css
+    - https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css
+  libs: []
+  base: []
+scripts:
+  cdn-bottom :
+    - https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js
+  libs-bottom:  []
+  base-bottom:
+    - syllabusv2-resources/js/reveal.js
+---
+<div class="reveal">
+  <div class="slides">
+    {{ content }}
+  </div>
+</div>
