@@ -4,7 +4,7 @@ styles:
   cdn : []
   libs: []
   base:
-    - syllabusv2-resources/css/course.css
+    - syllabus-resources/css/course.css
 scripts:
   cdn-top    :
     - https://d3js.org/d3.v5.min.js
@@ -14,15 +14,15 @@ scripts:
     - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/locale/nl.js
     - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/locale/nl-be.js
   libs-bottom:
-    - syllabusv2-resources/vendor/lodash/lodash.js
-    - syllabusv2-resources/vendor/lunr/lunr.min.js
+    - syllabus-resources/vendor/lodash/lodash.js
+    - syllabus-resources/vendor/lunr/lunr.min.js
   base-bottom:
-    - syllabusv2-resources/js/utilities.js
-    - syllabusv2-resources/js/course.js
-    - syllabusv2-resources/js/course.pagemap.js
-    - syllabusv2-resources/js/course.search.js
-    - syllabusv2-resources/js/course.syntax-highlight.js
-    - syllabusv2-resources/js/course.timeline.js
+    - syllabus-resources/js/utilities.js
+    - syllabus-resources/js/course.js
+    - syllabus-resources/js/course.pagemap.js
+    - syllabus-resources/js/course.search.js
+    - syllabus-resources/js/course.syntax-highlight.js
+    - syllabus-resources/js/course.timeline.js
 ---
 {%- assign syllabus = site.data.shared.syllabi | where: 'id', site.syllabus-id | first -%}
 {% include course/sidebar.html %}

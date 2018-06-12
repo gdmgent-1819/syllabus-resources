@@ -58,9 +58,12 @@ $scrollbar-thumb-outline-color: color-palette('primary', 'dark');
   }
   &__body {
     position: relative;
-    height: calc(100vh - 176px);
+    height: calc(100vh - 126px);
     overflow-y: scroll;
-    margin: 5px 0;
+    padding: 6px 0;
+    background: #40545f;
+    box-sizing: border-box;
+
     &::-webkit-scrollbar {
       border-radius: 10px;
       width: .4em;
