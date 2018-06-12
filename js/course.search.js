@@ -9,11 +9,7 @@ ready(function(){
     var Search = {
         "init": function() {
             this.JSONFILES = [
-                window.baseurl + '/api/general.json', 
-                window.baseurl + '/api/content.json', 
-                window.baseurl + '/api/faqs.json', 
-                window.baseurl + '/api/presentations.json', 
-                window.baseurl + '/api/posts.json'
+                window.baseurl + '/api/content.json'
             ];
             this._searchStore = [];
             this._searchTerm = null;
@@ -28,11 +24,7 @@ ready(function(){
                 document.querySelector('#search-query-inpage').setAttribute("value", this._searchTerm);
 
                 Promise.all([
-                    Utils.getJSONByPromise(this.JSONFILES[0]), 
-                    Utils.getJSONByPromise(this.JSONFILES[1]), 
-                    Utils.getJSONByPromise(this.JSONFILES[2]), 
-                    Utils.getJSONByPromise(this.JSONFILES[3]), 
-                    Utils.getJSONByPromise(this.JSONFILES[4])]).then(values => { 
+                    Utils.getJSONByPromise(this.JSONFILES[0])]).then(values => { 
                         var arrayLength = values.length; // Fix for Microsoft Edge 15
                         for (var i = 0; i < arrayLength; i++) {
                             var v = values[i];

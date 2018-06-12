@@ -1,13 +1,12 @@
 ---
-layout   : course
 permalink: /search
 scripts:
   bottom:
-    - /syllabusv2-resources/js/utilities.js
-    - /syllabusv2-resources/js/course.search.js
+    - /syllabus-resources/js/utilities.js
+    - /syllabus-resources/js/course.search.js
 #
 title       : Zoeken
-title_long  : Zoeken in Syllabus v2
+title_long  : Zoeken in Syllabus
 ---
 
 
