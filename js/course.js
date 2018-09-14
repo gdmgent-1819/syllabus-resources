@@ -1,3 +1,14 @@
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return decodeURI(results[1]) || 0;
+    }
+}
+
 function ready(cb) {
     /in/.test(document.readyState)
     ? setTimeout(ready.bind(null, cb), 90)
@@ -19,6 +30,7 @@ function scrollTo(element, to, duration) {
 ready(function () {
     const Course = {
         init() {
+            this.inCanvas = ($.urlParam('canvas') != null)?true:false;
             this.initSidebar();
             this.initScrollButtons();
         },
@@ -50,6 +62,10 @@ ready(function () {
                     $sidebar.classList.add('ahs-sidebar-open');
                 }
             });
+
+            if(this.inCanvas) {
+                $('body').addClass('incanvas');
+            }
 
             // Hide unnecessary nav lists
             $('body').on('click', '.nav__list--level-0 > .nav__item > .nav__link', function (event) {

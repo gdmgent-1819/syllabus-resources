@@ -5,8 +5,19 @@ body {
 }
 
 body {
-  .hidden {
+  &.hidden {
     display: none;
+  }
+
+  &.incanvas {
+    & > .ahs-sidebar {
+      height: 0px !important;
+      display: none;
+    }
+
+    & > .ahs-main {
+      margin-left: 0 !important;
+    }
   }
 }
 
