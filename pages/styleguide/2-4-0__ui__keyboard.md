@@ -30,8 +30,8 @@ Keys
  - <kbd>&#8679; Shift</kbd>
  - <kbd>&#8682; Shift Lock</kbd>
  - <kbd>Tab</kbd> Mac: <kbd>&#8677;</kbd>, Win: <kbd>&#8633;</kbd> 
- - <kbd><i class="fa fa-apple"></i></kbd>
- - <kbd><i class="fa fa-windows"></i></kbd>
+ - <kbd><i class="fab fa-apple"></i></kbd>
+ - <kbd><i class="fab fa-windows"></i></kbd>
  - <kbd>PgDn</kbd> <kbd>PgUp</kbd>
  - <kbd>&larr;</kbd> <kbd>&rarr;</kbd>
  - <kbd>&uarr;</kbd> <kbd>&darr;</kbd>
