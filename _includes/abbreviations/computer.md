@@ -98,6 +98,7 @@
 *[ICANN]:                   Internet Corporation for Assigned Names and Numbers
 *[ID]:                      Identifier
 *[IDE]:                     Integrated Development Environment
+*[ISE]:                     Integrated Scripting Environment
 *[IEEE]:                    Institute of Electrical and Electronics Engineers
 *[IETF]:                    Internet Engineering Task Force
 *[IIFE]:                    Immediately-Invoked Function Expression
