@@ -53,6 +53,7 @@
 *[DNS]:                     Domain Name System
 *[DOM]:                     Document Object Model
   *[DOM3]:                  Document Object Model level 3
+*[DOS]:                     Disk Operating System
 *[DPO]:                     Data Protection Officer
 *[DRY]:                     Don't Repeat Yourself
 *[DTD]:                     Document Type Declaration
@@ -192,6 +193,7 @@
 *[TPCI]:                    TIOBE Programming Community Index
 *[TST]:                     Transaction-Safe Tables
 *[TSV]:                     Tab-Separated Values
+*[TUI]:                     Text-based User Interface
 *[UDP]:                     User Datagram Protocol
 *[UI]:                      User Interface
 *[UID]:                     Unique Identifier
