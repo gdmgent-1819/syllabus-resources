@@ -19,7 +19,6 @@
 *[BDD]:                     Behaviour-Driven Development
 *[BIOS]:                    Basic Input/Output System
 *[BOC]:                     Build-Operate-Check
-*[BTW]:                     Belasting over de Toegevoegde Waarde
 *[CASE]:                    Computer Aided Software Engineering
 *[CERN]:                    European Organization for Nuclear Research
 *[CGI]:                     Common Gateway Interface
@@ -72,11 +71,13 @@
 *[F4E]:                     Foundation for Emails
 *[F4S]:                     Foundation for Sites
 *[FK]:                      Foreign Key
+*[FHS]:                     Filesystem Hierarchy Standard
 *[FOS]:                     Friends of Symfony
 *[FTP]:                     File Transfer Protocol
 *[GDPR]:                    General Data Protection Regulation
 *[GFM]:                     GitHub Flavored Markdown
 *[GIF]:                     Graphics Interchange Format
+*[GNU]:                     GNU's Not Unix
 *[GPU]:                     Graphics Processing Unit
 *[GUI]:                     Graphical User Interface
 *[GUID]:                    Globally Unique Identifier
@@ -118,6 +119,7 @@
 *[JWT]:                     JSON Web Token
 *[KISS]:                    Keep it simple, stupid
 *[KVP]:                     Key-Value Pair
+*[LSB]:                     Linux Standard Base
 *[LTS]:                     Long Term Support
 *[MathML]:                  Mathematical Markup Language
 *[MDN]:                     Mozilla Developer Network

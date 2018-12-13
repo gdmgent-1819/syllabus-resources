@@ -1,6 +1,7 @@
 *[AOI]:                     Areas of Interest
 *[B2B]:                     Business to Business
 *[B2C]:                     Business to Consumer
+*[BTW]:                     Belasting over de Toegevoegde Waarde
 *[C2C]:                     Consumer to Consumer
 *[CEO]:                     Chief Executive Officer
 *[CIO]:                     Chief Information Officer
