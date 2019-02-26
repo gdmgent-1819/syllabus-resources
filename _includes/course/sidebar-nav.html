@@ -1,4 +1,30 @@
 <nav class="nav">
     <h2>Main navigation</h2>
-    {%- include shared/topic-navigation-from-folder.html %}
+    <ul class="nav__list nav__list--level-0">
+    {%- if site.data.navigation %}
+        {%- for nav-item in site.data.navigation %}
+            {%- if nav-item.permalink contains 'styleguide/' %}
+                {%- unless page.url contains 'styleguide/' %}
+                    {%- continue %}
+                {%- endunless %}
+            {%- endif %}
+                <li class="nav__item">
+            {%- capture nav-icon -%}
+                {%- if nav-item.fa-icon %}<i class="nav__icon {{ nav-item.fa-icon }}"></i>{% endif %}
+                {%- if nav-item.icon %}<i class="nav__icon {{ nav-item.icon }}"></i>{% endif %}
+            {%- endcapture %}
+            {%- if nav-item.permalink %}
+                    <a class="nav__link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">{{ nav-icon }}{{ nav-item.name }}</a>
+            {%- else %}
+                    <span class="nav__link nav__link--disabled">{{ fa_icon }}{{ nav-item.name }}</span>
+            {%- endif %}
+            {%- if nav-item.folder %}
+                {%- include shared/navigation-from-folder.html nav-item=nav-item %}
+            {%- endif %}
+                </li>
+        {%- endfor %}
+    {%- else %}
+        {%- include shared/topic-navigation-from-folder.html %}
+    {%- endif %}
+    </ul>
 </nav>
