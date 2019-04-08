@@ -63,7 +63,8 @@ $scrollbar-thumb-outline-color: color-palette('primary', 'dark');
     padding: 6px 0;
     background: #40545f;
     box-sizing: border-box;
-
+    scrollbar-color: $primary-color rgba(0,0,0,.1);
+    scrollbar-width: thin;
     &::-webkit-scrollbar {
       border-radius: 10px;
       width: .4em;
